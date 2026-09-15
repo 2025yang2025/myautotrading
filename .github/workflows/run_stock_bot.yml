@@ -1,0 +1,37 @@
+name: 台股多週期自動化交易機器人
+
+on:
+  schedule:
+    # 台灣時間 09:00 - 13:30 (即 UTC 01:00 - 05:30)，每 30 分鐘執行一次
+    - cron: '*/30 1-5 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Main Pipeline
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Commit & Push Updated Files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add targets.json positions.json history.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update targets, positions & history [skip ci]" && git push)
