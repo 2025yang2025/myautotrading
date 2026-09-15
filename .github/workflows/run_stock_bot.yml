@@ -2,8 +2,8 @@ name: 台股多週期自動化交易機器人
 
 on:
   schedule:
-    # 台灣時間 09:00 - 13:30 (即 UTC 01:00 - 05:30)，每 30 分鐘執行一次
-    - cron: '*/30 1-5 * * 1-5'
+    # 星期一至星期五 台北時間 14:30 執行 (UTC 06:30)
+    - cron: '30 6 * * 1-5'
   workflow_dispatch:
 
 jobs:
@@ -33,5 +33,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add targets.json positions.json history.csv
+          
+          # 只針對實際存在檔案進行 git add，避免歷史紀錄檔尚未產生時報錯
+          [ -f targets.json ] && git add targets.json
+          [ -f positions.json ] && git add positions.json
+          [ -f history.csv ] && git add history.csv
+          
+          # 檢查是否有變更並提交
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update targets, positions & history [skip ci]" && git push)
