@@ -73,8 +73,14 @@ def run_strategy(new_targets, bot_token, chat_id):
   closed_positions = []
   updated_positions = {}
 
+  # 建立搜尋字典以利補充名稱
+  target_names = {t["symbol"]: t.get("name", "") for t in new_targets}
+
   # 1. 檢查既有持倉出場條件
   for symbol, pos in positions.items():
+    name = pos.get("name") or target_names.get(symbol, "")
+    display_title = f"{symbol} {name}".strip()
+
     ticker_str = f"{symbol}.TW"
     mtf_data = get_stock_mtf_data(ticker_str)
     if not mtf_data:
@@ -82,6 +88,7 @@ def run_strategy(new_targets, bot_token, chat_id):
       mtf_data = get_stock_mtf_data(ticker_str)
 
     if not mtf_data or mtf_data["1d"] is None:
+      pos["name"] = name
       updated_positions[symbol] = pos
       continue
 
@@ -94,6 +101,7 @@ def run_strategy(new_targets, bot_token, chat_id):
     if is_exit:
       closed_positions.append({
           "symbol": symbol,
+          "name": name,
           "entry_date": pos["entry_date"],
           "exit_date": today_str,
           "entry_price": entry_price,
@@ -102,16 +110,21 @@ def run_strategy(new_targets, bot_token, chat_id):
           "reason": exit_reason,
       })
       actions_today.append(
-          f"🔴 *【出場】* `{symbol}` @ {current_price} ({exit_reason},"
+          f"🔴 *【出場】* `{display_title}` @ {current_price} ({exit_reason},"
           f" 獲利: {return_pct:+.2f}%)"
       )
     else:
+      pos["name"] = name
       pos["current_price"] = current_price
       pos["return_pct"] = round(return_pct, 2)
       updated_positions[symbol] = pos
 
   # 2. 處理新篩選標的建倉
-  for symbol in new_targets:
+  for target in new_targets:
+    symbol = target["symbol"]
+    name = target.get("name", "")
+    display_title = f"{symbol} {name}".strip()
+
     if symbol not in updated_positions:
       ticker_str = f"{symbol}.TW"
       mtf_data = get_stock_mtf_data(ticker_str)
@@ -122,12 +135,13 @@ def run_strategy(new_targets, bot_token, chat_id):
       if mtf_data and mtf_data["1d"] is not None:
         price = round(mtf_data["1d"]["Close"].iloc[-1], 2)
         updated_positions[symbol] = {
+            "name": name,
             "entry_date": today_str,
             "entry_price": price,
             "current_price": price,
             "return_pct": 0.0,
         }
-        actions_today.append(f"🟢 *【建倉】* `{symbol}` @ {price}")
+        actions_today.append(f"🟢 *【建倉】* `{display_title}` @ {price}")
 
   # 3. 儲存檔案
   with open(POSITIONS_FILE, "w", encoding="utf-8") as f:
@@ -151,8 +165,10 @@ def run_strategy(new_targets, bot_token, chat_id):
 
   report.append(f"*當前持倉個數：* {len(updated_positions)} 檔")
   for sym, p in updated_positions.items():
+    p_name = p.get("name", "")
+    disp = f"{sym} {p_name}".strip()
     report.append(
-        f"• `{sym}` | 進場: {p['entry_price']} | 現價: {p['current_price']} |"
+        f"• `{disp}` | 進場: {p['entry_price']} | 現價: {p['current_price']} |"
         f" 報酬: {p['return_pct']:+.2f}%"
     )
 
