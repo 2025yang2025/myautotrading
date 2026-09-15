@@ -8,9 +8,9 @@ import yfinance as yf
 
 
 def get_all_tw_stocks():
-  """動態抓取台灣上市與上櫃全股票代碼 (排除 ETF、權證、特種股)"""
+  """動態抓取台灣上市與上櫃股票清單，並保留股票代號與中文名稱"""
   print("🌐 正在取得全台股上市與上櫃股票清單...")
-  stock_list = []
+  stocks_dict = {}
 
   # 1. 上市股票 (TWSE)
   try:
@@ -23,7 +23,9 @@ def get_all_tw_stocks():
     for row in df_twse["有價證券代號及名稱"].dropna():
       match = re.match(r"^(\d{4})\s+(.+)", str(row))
       if match:
-        stock_list.append(f"{match.group(1)}.TW")
+        code = match.group(1)
+        name = match.group(2).strip()
+        stocks_dict[f"{code}.TW"] = name
   except Exception as e:
     print(f"⚠️ 抓取上市股票清單失敗: {e}")
 
@@ -38,13 +40,14 @@ def get_all_tw_stocks():
     for row in df_tpex["有價證券代號及名稱"].dropna():
       match = re.match(r"^(\d{4})\s+(.+)", str(row))
       if match:
-        stock_list.append(f"{match.group(1)}.TWO")
+        code = match.group(1)
+        name = match.group(2).strip()
+        stocks_dict[f"{code}.TWO"] = name
   except Exception as e:
     print(f"⚠️ 抓取上櫃股票清單失敗: {e}")
 
-  stock_list = sorted(list(set(stock_list)))
-  print(f"✅ 成功取得 {len(stock_list)} 檔台股標的！")
-  return stock_list
+  print(f"✅ 成功取得 {len(stocks_dict)} 檔台股標的名稱對照！")
+  return stocks_dict
 
 
 def calculate_indicators(df):
@@ -162,11 +165,11 @@ def check_entry_condition(mtf):
 def run_autotrading():
   """全台股掃描主流程"""
   print("🚀 開始執行全台股多週期自動篩選...")
-  all_stocks = get_all_tw_stocks()
-  selected_stocks = []
+  stocks_dict = get_all_tw_stocks()
+  selected_targets = []  # 存放格式：[{"symbol": "2330", "name": "台積電"}, ...]
 
-  total_count = len(all_stocks)
-  for idx, ticker in enumerate(all_stocks, 1):
+  total_count = len(stocks_dict)
+  for idx, (ticker, name) in enumerate(stocks_dict.items(), 1):
     symbol = ticker.split(".")[0]
 
     if idx % 100 == 0 or idx == total_count:
@@ -174,19 +177,19 @@ def run_autotrading():
 
     mtf_data = get_stock_mtf_data(ticker)
     if check_entry_condition(mtf_data):
-      print(f"🎯 標的 {symbol} 符合全週期進場條件！")
-      selected_stocks.append(symbol)
+      print(f"🎯 標的 {symbol} {name} 符合全週期進場條件！")
+      selected_targets.append({"symbol": symbol, "name": name})
 
   targets_data = {
       "updated_at": pd.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S"),
-      "targets": selected_stocks,
+      "targets": selected_targets,
   }
 
   with open("targets.json", "w", encoding="utf-8") as f:
     json.dump(targets_data, f, ensure_ascii=False, indent=2)
 
-  print(f"✅ 全台股掃描完成！共選出 {len(selected_stocks)} 檔標的: {selected_stocks}")
-  return selected_stocks
+  print(f"✅ 全台股掃描完成！共選出 {len(selected_targets)} 檔標的")
+  return selected_targets
 
 
 if __name__ == "__main__":
