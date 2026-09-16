@@ -63,7 +63,6 @@ def run_strategy(new_targets, bot_token, chat_id):
   print("📈 開始執行【持倉管理與出場判斷】...")
   today_str = datetime.now().strftime("%Y-%m-%d")
 
-  # 讀取現有持倉紀錄 (包含昨天或過去保留的標的)
   positions = {}
   if os.path.exists(POSITIONS_FILE):
     try:
@@ -78,12 +77,9 @@ def run_strategy(new_targets, bot_token, chat_id):
   closed_positions = []
   updated_positions = {}
 
-  # 建立新標的名稱對照表
   target_names = {t["symbol"]: t.get("name", "") for t in new_targets}
 
-  # ----------------------------------------------------
-  # 階段 1：追蹤與更新【既有持倉】 (判斷是否觸發出場)
-  # ----------------------------------------------------
+  # 1. 檢查既有持倉出場條件
   for symbol, pos in positions.items():
     name = pos.get("name") or target_names.get(symbol, "")
     display_title = f"{symbol} {name}".strip()
@@ -94,7 +90,6 @@ def run_strategy(new_targets, bot_token, chat_id):
       ticker_str = f"{symbol}.TWO"
       mtf_data = get_stock_mtf_data(ticker_str)
 
-    # 抓不到最新 K 線時維持原持倉資料
     if not mtf_data or mtf_data["1d"] is None:
       pos["name"] = name
       updated_positions[symbol] = pos
@@ -102,12 +97,15 @@ def run_strategy(new_targets, bot_token, chat_id):
 
     current_price = round(mtf_data["1d"]["Close"].iloc[-1], 2)
     entry_price = pos["entry_price"]
+
+    # 估算一張 (1,000股) 的成本與盈虧金額
+    cost_per_sheet = round(entry_price * 1000)
+    profit_loss = round((current_price - entry_price) * 1000)
     return_pct = (current_price - entry_price) / entry_price * 100
 
     is_exit, exit_reason = check_exit_condition(mtf_data)
 
     if is_exit:
-      # 觸發平倉出場
       closed_positions.append({
           "symbol": symbol,
           "name": name,
@@ -115,29 +113,30 @@ def run_strategy(new_targets, bot_token, chat_id):
           "exit_date": today_str,
           "entry_price": entry_price,
           "exit_price": current_price,
+          "cost_per_sheet": cost_per_sheet,
+          "profit_loss": profit_loss,
           "return_pct": round(return_pct, 2),
           "reason": exit_reason,
       })
       actions_today.append(
-          f"🔴 *【出場】* `{display_title}` @ {current_price} ({exit_reason},"
-          f" 獲利: {return_pct:+.2f}%)"
+          f"🔴 *【出場】* `{display_title}` @ {current_price}\n"
+          f"   • 持有成本: {cost_per_sheet:,}元/張\n"
+          f"   • 最終平倉損益: {profit_loss:+,}元 ({return_pct:+.2f}%)"
       )
     else:
-      # 未觸發出場，繼續續抱並更新現價與報酬率
       pos["name"] = name
       pos["current_price"] = current_price
+      pos["cost_per_sheet"] = cost_per_sheet
+      pos["profit_loss"] = profit_loss
       pos["return_pct"] = round(return_pct, 2)
-      updated_positions[symbol] = pos  # 確保留在持倉名單中
+      updated_positions[symbol] = pos
 
-  # ----------------------------------------------------
-  # 階段 2：處理【今天全新篩選出來】的標的建倉
-  # ----------------------------------------------------
+  # 2. 處理新篩選標的建倉
   for target in new_targets:
     symbol = target["symbol"]
     name = target.get("name", "")
     display_title = f"{symbol} {name}".strip()
 
-    # 只針對「目前不在持倉中」的標的進行建倉
     if symbol not in updated_positions and symbol not in positions:
       ticker_str = f"{symbol}.TW"
       mtf_data = get_stock_mtf_data(ticker_str)
@@ -147,18 +146,23 @@ def run_strategy(new_targets, bot_token, chat_id):
 
       if mtf_data and mtf_data["1d"] is not None:
         price = round(mtf_data["1d"]["Close"].iloc[-1], 2)
+        cost_per_sheet = round(price * 1000)
+
         updated_positions[symbol] = {
             "name": name,
             "entry_date": today_str,
             "entry_price": price,
             "current_price": price,
+            "cost_per_sheet": cost_per_sheet,
+            "profit_loss": 0,
             "return_pct": 0.0,
         }
-        actions_today.append(f"🟢 *【建倉】* `{display_title}` @ {price}")
+        actions_today.append(
+            f"🟢 *【建倉】* `{display_title}` @ {price}\n"
+            f"   • 持有成本: {cost_per_sheet:,}元/張"
+        )
 
-  # ----------------------------------------------------
-  # 階段 3：寫回 positions.json 與歷史檔
-  # ----------------------------------------------------
+  # 3. 儲存檔案
   with open(POSITIONS_FILE, "w", encoding="utf-8") as f:
     json.dump(updated_positions, f, ensure_ascii=False, indent=2)
 
@@ -171,22 +175,27 @@ def run_strategy(new_targets, bot_token, chat_id):
       df_all = df_new
     df_all.to_csv(HISTORY_FILE, index=False, encoding="utf-8-sig")
 
-  # ----------------------------------------------------
-  # 階段 4：發送 Telegram 整合報表
-  # ----------------------------------------------------
+  # 4. Telegram 推播報表
   report = [f"📊 *【台股自動化策略總報表】* ({today_str})\n"]
   if actions_today:
     report.append("*今日異動事項：*")
     report.extend(actions_today)
     report.append("")
 
-  report.append(f"*當前持倉個數：* {len(updated_positions)} 檔")
+  report.append(f"*當前持倉個數：* {len(updated_positions)} 檔\n")
+
   for sym, p in updated_positions.items():
     p_name = p.get("name", "")
     disp = f"{sym} {p_name}".strip()
+
+    # 標示虧損狀態符號
+    status_icon = "🟢" if p["profit_loss"] >= 0 else "🔴"
+
     report.append(
-        f"• `{disp}` | 進場: {p['entry_price']} | 現價: {p['current_price']} |"
-        f" 報酬: {p['return_pct']:+.2f}%"
+        f"{status_icon} *`{disp}`*\n"
+        f"   • 持有成本：{p['entry_price']} 元/股 (約 {p['cost_per_sheet']:,} 元/張)\n"
+        f"   • 目前現價：{p['current_price']} 元\n"
+        f"   • 損益狀態：*{p['profit_loss']:+,} 元* ({p['return_pct']:+.2f}%)\n"
     )
 
   send_telegram("\n".join(report), bot_token, chat_id)
