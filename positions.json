@@ -3,350 +3,612 @@
     "name": "華榮",
     "entry_date": "2026-09-16",
     "entry_price": 35.85,
-    "current_price": 35.85,
-    "return_pct": 0.0
+    "current_price": 36.0,
+    "return_pct": 0.42,
+    "cost_per_sheet": 35850,
+    "profit_loss": 150
   },
   "1709": {
     "name": "和益",
     "entry_date": "2026-09-16",
     "entry_price": 39.05,
     "current_price": 39.05,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 39050,
+    "profit_loss": 0
   },
   "1710": {
     "name": "東聯",
     "entry_date": "2026-09-16",
     "entry_price": 16.1,
-    "current_price": 16.1,
-    "return_pct": 0.0
+    "current_price": 15.8,
+    "return_pct": -1.86,
+    "cost_per_sheet": 16100,
+    "profit_loss": -300
   },
   "1808": {
     "name": "潤隆",
     "entry_date": "2026-09-16",
     "entry_price": 33.4,
-    "current_price": 33.4,
-    "return_pct": 0.0
+    "current_price": 33.15,
+    "return_pct": -0.75,
+    "cost_per_sheet": 33400,
+    "profit_loss": -250
   },
   "2033": {
     "name": "佳大",
     "entry_date": "2026-09-16",
     "entry_price": 28.05,
     "current_price": 28.05,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 28050,
+    "profit_loss": 0
   },
   "2103": {
     "name": "台橡",
     "entry_date": "2026-09-16",
     "entry_price": 26.6,
-    "current_price": 26.6,
-    "return_pct": 0.0
+    "current_price": 26.9,
+    "return_pct": 1.13,
+    "cost_per_sheet": 26600,
+    "profit_loss": 300
   },
   "2305": {
     "name": "全友",
     "entry_date": "2026-09-16",
     "entry_price": 49.4,
     "current_price": 49.4,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 49400,
+    "profit_loss": 0
   },
   "2354": {
     "name": "鴻準",
     "entry_date": "2026-09-16",
     "entry_price": 65.3,
-    "current_price": 65.3,
-    "return_pct": 0.0
+    "current_price": 65.2,
+    "return_pct": -0.15,
+    "cost_per_sheet": 65300,
+    "profit_loss": -100
   },
   "2413": {
     "name": "環科",
     "entry_date": "2026-09-16",
     "entry_price": 53.0,
     "current_price": 53.0,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 53000,
+    "profit_loss": 0
   },
   "2426": {
     "name": "鼎元",
     "entry_date": "2026-09-16",
     "entry_price": 99.4,
-    "current_price": 99.4,
-    "return_pct": 0.0
+    "current_price": 99.8,
+    "return_pct": 0.4,
+    "cost_per_sheet": 99400,
+    "profit_loss": 400
   },
   "2466": {
     "name": "冠西電",
     "entry_date": "2026-09-16",
     "entry_price": 105.5,
-    "current_price": 105.5,
-    "return_pct": 0.0
+    "current_price": 104.0,
+    "return_pct": -1.42,
+    "cost_per_sheet": 105500,
+    "profit_loss": -1500
   },
   "2474": {
     "name": "可成",
     "entry_date": "2026-09-16",
     "entry_price": 203.5,
-    "current_price": 203.5,
-    "return_pct": 0.0
+    "current_price": 205.0,
+    "return_pct": 0.74,
+    "cost_per_sheet": 203500,
+    "profit_loss": 1500
   },
   "2491": {
     "name": "吉祥全",
     "entry_date": "2026-09-16",
     "entry_price": 40.6,
-    "current_price": 40.6,
-    "return_pct": 0.0
+    "current_price": 40.95,
+    "return_pct": 0.86,
+    "cost_per_sheet": 40600,
+    "profit_loss": 350
   },
   "2603": {
     "name": "長榮",
     "entry_date": "2026-09-16",
     "entry_price": 238.5,
-    "current_price": 238.5,
-    "return_pct": 0.0
+    "current_price": 237.0,
+    "return_pct": -0.63,
+    "cost_per_sheet": 238500,
+    "profit_loss": -1500
   },
   "2605": {
     "name": "新興",
     "entry_date": "2026-09-16",
     "entry_price": 36.3,
-    "current_price": 36.3,
-    "return_pct": 0.0
+    "current_price": 35.5,
+    "return_pct": -2.2,
+    "cost_per_sheet": 36300,
+    "profit_loss": -800
   },
   "2609": {
     "name": "陽明",
     "entry_date": "2026-09-16",
     "entry_price": 60.6,
-    "current_price": 60.6,
-    "return_pct": 0.0
+    "current_price": 60.2,
+    "return_pct": -0.66,
+    "cost_per_sheet": 60600,
+    "profit_loss": -400
   },
   "2615": {
     "name": "萬海",
     "entry_date": "2026-09-16",
     "entry_price": 115.5,
-    "current_price": 115.5,
-    "return_pct": 0.0
+    "current_price": 114.5,
+    "return_pct": -0.87,
+    "cost_per_sheet": 115500,
+    "profit_loss": -1000
   },
   "2637": {
     "name": "慧洋-KY",
     "entry_date": "2026-09-16",
     "entry_price": 104.5,
-    "current_price": 104.5,
-    "return_pct": 0.0
+    "current_price": 102.5,
+    "return_pct": -1.91,
+    "cost_per_sheet": 104500,
+    "profit_loss": -2000
   },
   "2915": {
     "name": "潤泰全",
     "entry_date": "2026-09-16",
     "entry_price": 57.2,
-    "current_price": 57.2,
-    "return_pct": 0.0
+    "current_price": 56.9,
+    "return_pct": -0.52,
+    "cost_per_sheet": 57200,
+    "profit_loss": -300
   },
   "3008": {
     "name": "大立光",
     "entry_date": "2026-09-16",
     "entry_price": 6350.0,
-    "current_price": 6350.0,
-    "return_pct": 0.0
+    "current_price": 6335.0,
+    "return_pct": -0.24,
+    "cost_per_sheet": 6350000,
+    "profit_loss": -15000
   },
   "3024": {
     "name": "憶聲",
     "entry_date": "2026-09-16",
     "entry_price": 14.45,
-    "current_price": 14.45,
-    "return_pct": 0.0
+    "current_price": 14.4,
+    "return_pct": -0.35,
+    "cost_per_sheet": 14450,
+    "profit_loss": -50
   },
   "3034": {
     "name": "聯詠",
     "entry_date": "2026-09-16",
     "entry_price": 546.0,
-    "current_price": 546.0,
-    "return_pct": 0.0
+    "current_price": 545.0,
+    "return_pct": -0.18,
+    "cost_per_sheet": 546000,
+    "profit_loss": -1000
   },
   "3094": {
     "name": "聯傑",
     "entry_date": "2026-09-16",
     "entry_price": 44.1,
-    "current_price": 44.1,
-    "return_pct": 0.0
+    "current_price": 44.5,
+    "return_pct": 0.91,
+    "cost_per_sheet": 44100,
+    "profit_loss": 400
   },
   "3504": {
     "name": "揚明光",
     "entry_date": "2026-09-16",
     "entry_price": 81.0,
-    "current_price": 81.0,
-    "return_pct": 0.0
+    "current_price": 81.4,
+    "return_pct": 0.49,
+    "cost_per_sheet": 81000,
+    "profit_loss": 400
   },
   "3543": {
     "name": "州巧",
     "entry_date": "2026-09-16",
     "entry_price": 42.5,
-    "current_price": 42.5,
-    "return_pct": 0.0
+    "current_price": 42.6,
+    "return_pct": 0.24,
+    "cost_per_sheet": 42500,
+    "profit_loss": 100
   },
   "3605": {
     "name": "宏致",
     "entry_date": "2026-09-16",
     "entry_price": 130.5,
-    "current_price": 130.5,
-    "return_pct": 0.0
+    "current_price": 140.0,
+    "return_pct": 7.28,
+    "cost_per_sheet": 130500,
+    "profit_loss": 9500
   },
   "4976": {
     "name": "佳凌",
     "entry_date": "2026-09-16",
     "entry_price": 36.55,
-    "current_price": 36.55,
-    "return_pct": 0.0
+    "current_price": 36.45,
+    "return_pct": -0.27,
+    "cost_per_sheet": 36550,
+    "profit_loss": -100
   },
   "4977": {
     "name": "眾達-KY",
     "entry_date": "2026-09-16",
     "entry_price": 171.5,
-    "current_price": 171.5,
-    "return_pct": 0.0
+    "current_price": 176.5,
+    "return_pct": 2.92,
+    "cost_per_sheet": 171500,
+    "profit_loss": 5000
   },
   "5608": {
     "name": "四維航",
     "entry_date": "2026-09-16",
     "entry_price": 16.75,
-    "current_price": 16.75,
-    "return_pct": 0.0
+    "current_price": 16.6,
+    "return_pct": -0.9,
+    "cost_per_sheet": 16750,
+    "profit_loss": -150
   },
   "5871": {
     "name": "中租-KY",
     "entry_date": "2026-09-16",
     "entry_price": 112.5,
     "current_price": 112.5,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 112500,
+    "profit_loss": 0
   },
   "6168": {
     "name": "宏齊",
     "entry_date": "2026-09-16",
     "entry_price": 31.3,
-    "current_price": 31.3,
-    "return_pct": 0.0
+    "current_price": 32.0,
+    "return_pct": 2.24,
+    "cost_per_sheet": 31300,
+    "profit_loss": 700
   },
   "6213": {
     "name": "聯茂",
     "entry_date": "2026-09-16",
     "entry_price": 531.0,
-    "current_price": 531.0,
-    "return_pct": 0.0
+    "current_price": 543.0,
+    "return_pct": 2.26,
+    "cost_per_sheet": 531000,
+    "profit_loss": 12000
   },
   "6214": {
     "name": "精誠",
     "entry_date": "2026-09-16",
     "entry_price": 191.5,
     "current_price": 191.5,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 191500,
+    "profit_loss": 0
   },
   "6226": {
     "name": "光鼎",
     "entry_date": "2026-09-16",
     "entry_price": 39.9,
     "current_price": 39.9,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 39900,
+    "profit_loss": 0
   },
   "6416": {
     "name": "瑞祺電通",
     "entry_date": "2026-09-16",
     "entry_price": 121.5,
-    "current_price": 121.5,
-    "return_pct": 0.0
+    "current_price": 119.5,
+    "return_pct": -1.65,
+    "cost_per_sheet": 121500,
+    "profit_loss": -2000
   },
   "6426": {
     "name": "統新",
     "entry_date": "2026-09-16",
     "entry_price": 330.0,
     "current_price": 330.0,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 330000,
+    "profit_loss": 0
   },
   "8039": {
     "name": "台虹",
     "entry_date": "2026-09-16",
     "entry_price": 273.0,
-    "current_price": 273.0,
-    "return_pct": 0.0
+    "current_price": 275.5,
+    "return_pct": 0.92,
+    "cost_per_sheet": 273000,
+    "profit_loss": 2500
   },
   "9945": {
     "name": "潤泰新",
     "entry_date": "2026-09-16",
     "entry_price": 28.15,
-    "current_price": 28.15,
-    "return_pct": 0.0
+    "current_price": 28.0,
+    "return_pct": -0.53,
+    "cost_per_sheet": 28150,
+    "profit_loss": -150
   },
   "2221": {
     "name": "大甲",
     "entry_date": "2026-09-16",
     "entry_price": 105.5,
     "current_price": 105.5,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 105500,
+    "profit_loss": 0
   },
   "3066": {
     "name": "李洲",
     "entry_date": "2026-09-16",
     "entry_price": 26.0,
-    "current_price": 26.0,
-    "return_pct": 0.0
+    "current_price": 25.9,
+    "return_pct": -0.38,
+    "cost_per_sheet": 26000,
+    "profit_loss": -100
   },
   "3081": {
     "name": "聯亞",
     "entry_date": "2026-09-16",
     "entry_price": 2830.0,
-    "current_price": 2830.0,
-    "return_pct": 0.0
+    "current_price": 2905.0,
+    "return_pct": 2.65,
+    "cost_per_sheet": 2830000,
+    "profit_loss": 75000
   },
   "3441": {
     "name": "聯一光",
     "entry_date": "2026-09-16",
     "entry_price": 186.0,
     "current_price": 186.0,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 186000,
+    "profit_loss": 0
   },
   "3490": {
     "name": "單井",
     "entry_date": "2026-09-16",
     "entry_price": 44.15,
-    "current_price": 44.15,
-    "return_pct": 0.0
+    "current_price": 44.75,
+    "return_pct": 1.36,
+    "cost_per_sheet": 44150,
+    "profit_loss": 600
   },
   "3498": {
     "name": "陽程",
     "entry_date": "2026-09-16",
     "entry_price": 189.0,
-    "current_price": 189.0,
-    "return_pct": 0.0
+    "current_price": 190.5,
+    "return_pct": 0.79,
+    "cost_per_sheet": 189000,
+    "profit_loss": 1500
   },
   "4971": {
     "name": "IET-KY",
     "entry_date": "2026-09-16",
     "entry_price": 574.0,
-    "current_price": 574.0,
-    "return_pct": 0.0
+    "current_price": 573.0,
+    "return_pct": -0.17,
+    "cost_per_sheet": 574000,
+    "profit_loss": -1000
   },
   "6218": {
     "name": "豪勉",
     "entry_date": "2026-09-16",
     "entry_price": 54.1,
     "current_price": 54.1,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 54100,
+    "profit_loss": 0
   },
   "6530": {
     "name": "創威",
     "entry_date": "2026-09-16",
     "entry_price": 94.7,
-    "current_price": 94.7,
-    "return_pct": 0.0
+    "current_price": 95.7,
+    "return_pct": 1.06,
+    "cost_per_sheet": 94700,
+    "profit_loss": 1000
   },
   "6588": {
     "name": "東典光電",
     "entry_date": "2026-09-16",
     "entry_price": 110.0,
     "current_price": 110.0,
-    "return_pct": 0.0
+    "return_pct": 0.0,
+    "cost_per_sheet": 110000,
+    "profit_loss": 0
   },
   "6617": {
     "name": "共信-KY",
     "entry_date": "2026-09-16",
     "entry_price": 135.5,
-    "current_price": 135.5,
-    "return_pct": 0.0
+    "current_price": 138.0,
+    "return_pct": 1.85,
+    "cost_per_sheet": 135500,
+    "profit_loss": 2500
   },
   "8227": {
     "name": "巨有科技",
     "entry_date": "2026-09-16",
     "entry_price": 260.0,
-    "current_price": 260.0,
+    "current_price": 270.5,
+    "return_pct": 4.04,
+    "cost_per_sheet": 260000,
+    "profit_loss": 10500
+  },
+  "1312": {
+    "name": "國喬",
+    "entry_date": "2026-09-16",
+    "entry_price": 14.8,
+    "current_price": 14.8,
+    "cost_per_sheet": 14800,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "1605": {
+    "name": "華新",
+    "entry_date": "2026-09-16",
+    "entry_price": 36.75,
+    "current_price": 36.75,
+    "cost_per_sheet": 36750,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "1904": {
+    "name": "正隆",
+    "entry_date": "2026-09-16",
+    "entry_price": 24.6,
+    "current_price": 24.6,
+    "cost_per_sheet": 24600,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2006": {
+    "name": "東和鋼鐵",
+    "entry_date": "2026-09-16",
+    "entry_price": 81.7,
+    "current_price": 81.7,
+    "cost_per_sheet": 81700,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2027": {
+    "name": "大成鋼",
+    "entry_date": "2026-09-16",
+    "entry_price": 46.2,
+    "current_price": 46.2,
+    "cost_per_sheet": 46200,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2034": {
+    "name": "允強",
+    "entry_date": "2026-09-16",
+    "entry_price": 20.6,
+    "current_price": 20.6,
+    "cost_per_sheet": 20600,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2338": {
+    "name": "光罩",
+    "entry_date": "2026-09-16",
+    "entry_price": 50.7,
+    "current_price": 50.7,
+    "cost_per_sheet": 50700,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2408": {
+    "name": "南亞科",
+    "entry_date": "2026-09-16",
+    "entry_price": 488.5,
+    "current_price": 488.5,
+    "cost_per_sheet": 488500,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2542": {
+    "name": "興富發",
+    "entry_date": "2026-09-16",
+    "entry_price": 45.85,
+    "current_price": 45.85,
+    "cost_per_sheet": 45850,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "2887": {
+    "name": "台新新光金",
+    "entry_date": "2026-09-16",
+    "entry_price": 44.25,
+    "current_price": 44.25,
+    "cost_per_sheet": 44250,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "3231": {
+    "name": "緯創",
+    "entry_date": "2026-09-16",
+    "entry_price": 184.5,
+    "current_price": 184.5,
+    "cost_per_sheet": 184500,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "3443": {
+    "name": "創意",
+    "entry_date": "2026-09-16",
+    "entry_price": 6275.0,
+    "current_price": 6275.0,
+    "cost_per_sheet": 6275000,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "6141": {
+    "name": "柏承",
+    "entry_date": "2026-09-16",
+    "entry_price": 50.5,
+    "current_price": 50.5,
+    "cost_per_sheet": 50500,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "6269": {
+    "name": "台郡",
+    "entry_date": "2026-09-16",
+    "entry_price": 65.1,
+    "current_price": 65.1,
+    "cost_per_sheet": 65100,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "8103": {
+    "name": "瀚荃",
+    "entry_date": "2026-09-16",
+    "entry_price": 120.5,
+    "current_price": 120.5,
+    "cost_per_sheet": 120500,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "9933": {
+    "name": "中鼎",
+    "entry_date": "2026-09-16",
+    "entry_price": 42.7,
+    "current_price": 42.7,
+    "cost_per_sheet": 42700,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "4979": {
+    "name": "華星光",
+    "entry_date": "2026-09-16",
+    "entry_price": 539.0,
+    "current_price": 539.0,
+    "cost_per_sheet": 539000,
+    "profit_loss": 0,
+    "return_pct": 0.0
+  },
+  "6179": {
+    "name": "亞通",
+    "entry_date": "2026-09-16",
+    "entry_price": 37.75,
+    "current_price": 37.75,
+    "cost_per_sheet": 37750,
+    "profit_loss": 0,
     "return_pct": 0.0
   }
 }

@@ -1,37 +1,49 @@
 {
-  "updated_at": "2026-09-16 02:06:38",
+  "updated_at": "2026-09-16 04:04:00",
   "targets": [
+    {
+      "symbol": "1312",
+      "name": "國喬"
+    },
+    {
+      "symbol": "1605",
+      "name": "華新"
+    },
     {
       "symbol": "1608",
       "name": "華榮"
     },
     {
-      "symbol": "1709",
-      "name": "和益"
+      "symbol": "1904",
+      "name": "正隆"
     },
     {
-      "symbol": "1710",
-      "name": "東聯"
+      "symbol": "2006",
+      "name": "東和鋼鐵"
     },
     {
-      "symbol": "1808",
-      "name": "潤隆"
+      "symbol": "2027",
+      "name": "大成鋼"
     },
     {
       "symbol": "2033",
       "name": "佳大"
     },
     {
-      "symbol": "2103",
-      "name": "台橡"
+      "symbol": "2034",
+      "name": "允強"
     },
     {
-      "symbol": "2305",
-      "name": "全友"
+      "symbol": "2338",
+      "name": "光罩"
     },
     {
       "symbol": "2354",
       "name": "鴻準"
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科"
     },
     {
       "symbol": "2413",
@@ -50,76 +62,44 @@
       "name": "可成"
     },
     {
-      "symbol": "2491",
-      "name": "吉祥全"
+      "symbol": "2542",
+      "name": "興富發"
     },
     {
-      "symbol": "2603",
-      "name": "長榮"
-    },
-    {
-      "symbol": "2605",
-      "name": "新興"
-    },
-    {
-      "symbol": "2609",
-      "name": "陽明"
-    },
-    {
-      "symbol": "2615",
-      "name": "萬海"
-    },
-    {
-      "symbol": "2637",
-      "name": "慧洋-KY"
+      "symbol": "2887",
+      "name": "台新新光金"
     },
     {
       "symbol": "2915",
       "name": "潤泰全"
     },
     {
-      "symbol": "3008",
-      "name": "大立光"
-    },
-    {
-      "symbol": "3024",
-      "name": "憶聲"
-    },
-    {
-      "symbol": "3034",
-      "name": "聯詠"
-    },
-    {
       "symbol": "3094",
       "name": "聯傑"
     },
     {
-      "symbol": "3504",
-      "name": "揚明光"
+      "symbol": "3231",
+      "name": "緯創"
+    },
+    {
+      "symbol": "3443",
+      "name": "創意"
     },
     {
       "symbol": "3543",
       "name": "州巧"
     },
     {
-      "symbol": "3605",
-      "name": "宏致"
-    },
-    {
-      "symbol": "4976",
-      "name": "佳凌"
-    },
-    {
       "symbol": "4977",
       "name": "眾達-KY"
     },
     {
-      "symbol": "5608",
-      "name": "四維航"
-    },
-    {
       "symbol": "5871",
       "name": "中租-KY"
+    },
+    {
+      "symbol": "6141",
+      "name": "柏承"
     },
     {
       "symbol": "6168",
@@ -134,68 +114,36 @@
       "name": "精誠"
     },
     {
-      "symbol": "6226",
-      "name": "光鼎"
+      "symbol": "6269",
+      "name": "台郡"
     },
     {
-      "symbol": "6416",
-      "name": "瑞祺電通"
+      "symbol": "8103",
+      "name": "瀚荃"
     },
     {
-      "symbol": "6426",
-      "name": "統新"
-    },
-    {
-      "symbol": "8039",
-      "name": "台虹"
-    },
-    {
-      "symbol": "9945",
-      "name": "潤泰新"
-    },
-    {
-      "symbol": "2221",
-      "name": "大甲"
-    },
-    {
-      "symbol": "3066",
-      "name": "李洲"
+      "symbol": "9933",
+      "name": "中鼎"
     },
     {
       "symbol": "3081",
       "name": "聯亞"
     },
     {
-      "symbol": "3441",
-      "name": "聯一光"
-    },
-    {
-      "symbol": "3490",
-      "name": "單井"
-    },
-    {
       "symbol": "3498",
       "name": "陽程"
     },
     {
-      "symbol": "4971",
-      "name": "IET-KY"
+      "symbol": "4979",
+      "name": "華星光"
     },
     {
-      "symbol": "6218",
-      "name": "豪勉"
+      "symbol": "6179",
+      "name": "亞通"
     },
     {
       "symbol": "6530",
       "name": "創威"
-    },
-    {
-      "symbol": "6588",
-      "name": "東典光電"
-    },
-    {
-      "symbol": "6617",
-      "name": "共信-KY"
     },
     {
       "symbol": "8227",
