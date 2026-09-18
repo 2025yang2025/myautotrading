@@ -1,77 +1,49 @@
 {
-  "updated_at": "2026-09-17 12:04:53",
+  "updated_at": "2026-09-18 04:47:05",
   "targets": [
     {
-      "symbol": "1909",
-      "name": "榮成"
+      "symbol": "1402",
+      "name": "遠東新"
     },
     {
-      "symbol": "2069",
-      "name": "運錩"
+      "symbol": "2324",
+      "name": "仁寶"
     },
     {
-      "symbol": "2412",
-      "name": "中華電"
+      "symbol": "2395",
+      "name": "研華"
     },
     {
-      "symbol": "2520",
-      "name": "冠德"
+      "symbol": "2454",
+      "name": "聯發科"
     },
     {
-      "symbol": "2603",
-      "name": "長榮"
+      "symbol": "2455",
+      "name": "全新"
     },
     {
-      "symbol": "2609",
-      "name": "陽明"
+      "symbol": "2618",
+      "name": "長榮航"
     },
     {
-      "symbol": "2612",
-      "name": "中航"
+      "symbol": "3034",
+      "name": "聯詠"
     },
     {
-      "symbol": "2615",
-      "name": "萬海"
+      "symbol": "3055",
+      "name": "蔚華科"
     },
     {
-      "symbol": "2633",
-      "name": "台灣高鐵"
+      "symbol": "3504",
+      "name": "揚明光"
     },
     {
-      "symbol": "2637",
-      "name": "慧洋-KY"
-    },
-    {
-      "symbol": "2851",
-      "name": "中再保"
-    },
-    {
-      "symbol": "2890",
-      "name": "永豐金"
-    },
-    {
-      "symbol": "5608",
-      "name": "四維航"
-    },
-    {
-      "symbol": "5871",
-      "name": "中租-KY"
-    },
-    {
-      "symbol": "6206",
-      "name": "飛捷"
+      "symbol": "6112",
+      "name": "邁達特"
     },
     {
       "symbol": "6214",
       "name": "精誠"
-    },
-    {
-      "symbol": "6668",
-      "name": "中揚光"
-    },
-    {
-      "symbol": "3176",
-      "name": "基亞"
     },
     {
       "symbol": "3498",
