@@ -1,69 +1,133 @@
 {
-  "updated_at": "2026-09-23 12:07:07",
+  "updated_at": "2026-09-24 12:21:05",
   "targets": [
     {
-      "symbol": "2027",
-      "name": "大成鋼"
+      "symbol": "1301",
+      "name": "台塑"
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞"
+    },
+    {
+      "symbol": "1308",
+      "name": "亞聚"
+    },
+    {
+      "symbol": "1326",
+      "name": "台化"
+    },
+    {
+      "symbol": "1434",
+      "name": "福懋"
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂"
+    },
+    {
+      "symbol": "2069",
+      "name": "運錩"
+    },
+    {
+      "symbol": "2103",
+      "name": "台橡"
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科"
     },
     {
       "symbol": "2354",
       "name": "鴻準"
     },
     {
-      "symbol": "2357",
-      "name": "華碩"
+      "symbol": "2436",
+      "name": "偉詮電"
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子"
     },
     {
       "symbol": "2464",
       "name": "盟立"
     },
     {
-      "symbol": "2603",
-      "name": "長榮"
+      "symbol": "2465",
+      "name": "麗臺"
     },
     {
-      "symbol": "2605",
-      "name": "新興"
+      "symbol": "2466",
+      "name": "冠西電"
     },
     {
-      "symbol": "6108",
-      "name": "競國"
+      "symbol": "2634",
+      "name": "漢翔"
     },
     {
-      "symbol": "6141",
-      "name": "柏承"
+      "symbol": "3008",
+      "name": "大立光"
+    },
+    {
+      "symbol": "3022",
+      "name": "威強電"
+    },
+    {
+      "symbol": "3031",
+      "name": "佰鴻"
+    },
+    {
+      "symbol": "3231",
+      "name": "緯創"
+    },
+    {
+      "symbol": "3532",
+      "name": "台勝科"
+    },
+    {
+      "symbol": "6168",
+      "name": "宏齊"
     },
     {
       "symbol": "6269",
       "name": "台郡"
     },
     {
-      "symbol": "6672",
-      "name": "騰輝電子-KY"
+      "symbol": "6456",
+      "name": "GIS-KY"
     },
     {
-      "symbol": "6830",
-      "name": "汎銓"
+      "symbol": "3081",
+      "name": "聯亞"
     },
     {
-      "symbol": "9921",
-      "name": "巨大"
+      "symbol": "3234",
+      "name": "光環"
     },
     {
-      "symbol": "3339",
-      "name": "泰谷"
+      "symbol": "3354",
+      "name": "律勝"
     },
     {
-      "symbol": "3491",
-      "name": "昇達科"
+      "symbol": "3498",
+      "name": "陽程"
+    },
+    {
+      "symbol": "3680",
+      "name": "家登"
+    },
+    {
+      "symbol": "4971",
+      "name": "IET-KY"
     },
     {
       "symbol": "5351",
       "name": "鈺創"
     },
     {
-      "symbol": "8240",
-      "name": "華宏"
+      "symbol": "6727",
+      "name": "亞泰金屬"
     }
   ]
 }
