@@ -1,101 +1,81 @@
 {
-  "updated_at": "2026-10-07 14:01:54",
+  "updated_at": "2026-10-08 14:05:31",
   "targets": [
     {
-      "symbol": "1102",
-      "name": "亞泥"
-    },
-    {
-      "symbol": "1304",
-      "name": "台聚"
-    },
-    {
-      "symbol": "1305",
-      "name": "華夏"
-    },
-    {
-      "symbol": "1313",
-      "name": "聯成"
-    },
-    {
-      "symbol": "1904",
-      "name": "正隆"
-    },
-    {
-      "symbol": "2241",
-      "name": "艾姆勒"
-    },
-    {
-      "symbol": "2377",
-      "name": "微星"
+      "symbol": "2201",
+      "name": "裕隆"
     },
     {
       "symbol": "2393",
       "name": "億光"
     },
     {
-      "symbol": "2520",
-      "name": "冠德"
+      "symbol": "2449",
+      "name": "京元電子"
     },
     {
-      "symbol": "2606",
-      "name": "裕民"
+      "symbol": "2889",
+      "name": "國票金"
     },
     {
-      "symbol": "2633",
-      "name": "台灣高鐵"
+      "symbol": "3045",
+      "name": "台灣大"
     },
     {
-      "symbol": "3014",
-      "name": "聯陽"
-    },
-    {
-      "symbol": "3518",
-      "name": "柏騰"
+      "symbol": "3167",
+      "name": "大量"
     },
     {
       "symbol": "3532",
       "name": "台勝科"
     },
     {
-      "symbol": "3543",
-      "name": "州巧"
+      "symbol": "3701",
+      "name": "大眾控"
     },
     {
-      "symbol": "6141",
-      "name": "柏承"
+      "symbol": "5243",
+      "name": "乙盛-KY"
     },
     {
-      "symbol": "6278",
-      "name": "台表科"
+      "symbol": "6224",
+      "name": "聚鼎"
     },
     {
-      "symbol": "8039",
-      "name": "台虹"
+      "symbol": "6271",
+      "name": "同欣電"
     },
     {
-      "symbol": "2061",
-      "name": "風青"
+      "symbol": "3264",
+      "name": "欣銓"
     },
     {
-      "symbol": "3374",
-      "name": "精材"
+      "symbol": "3339",
+      "name": "泰谷"
     },
     {
-      "symbol": "4939",
-      "name": "亞電"
+      "symbol": "3354",
+      "name": "律勝"
     },
     {
-      "symbol": "6179",
-      "name": "亞通"
+      "symbol": "3680",
+      "name": "家登"
     },
     {
-      "symbol": "6547",
-      "name": "高端疫苗"
+      "symbol": "4174",
+      "name": "浩鼎"
     },
     {
-      "symbol": "8431",
-      "name": "匯鑽科"
+      "symbol": "4556",
+      "name": "旭然"
+    },
+    {
+      "symbol": "5464",
+      "name": "霖宏"
+    },
+    {
+      "symbol": "6727",
+      "name": "亞泰金屬"
     }
   ]
 }
