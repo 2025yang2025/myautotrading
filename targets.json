@@ -1,81 +1,97 @@
 {
-  "updated_at": "2026-10-08 14:05:31",
+  "updated_at": "2026-10-13 14:52:07",
   "targets": [
     {
-      "symbol": "2201",
-      "name": "裕隆"
+      "symbol": "1216",
+      "name": "統一"
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞"
+    },
+    {
+      "symbol": "1310",
+      "name": "台苯"
+    },
+    {
+      "symbol": "1313",
+      "name": "聯成"
+    },
+    {
+      "symbol": "1326",
+      "name": "台化"
+    },
+    {
+      "symbol": "1904",
+      "name": "正隆"
+    },
+    {
+      "symbol": "2104",
+      "name": "國際中橡"
+    },
+    {
+      "symbol": "2340",
+      "name": "台亞"
+    },
+    {
+      "symbol": "2347",
+      "name": "聯強"
     },
     {
       "symbol": "2393",
       "name": "億光"
     },
     {
+      "symbol": "2412",
+      "name": "中華電"
+    },
+    {
       "symbol": "2449",
       "name": "京元電子"
     },
     {
-      "symbol": "2889",
-      "name": "國票金"
+      "symbol": "2886",
+      "name": "兆豐金"
     },
     {
       "symbol": "3045",
       "name": "台灣大"
     },
     {
-      "symbol": "3167",
-      "name": "大量"
+      "symbol": "4961",
+      "name": "天鈺"
     },
     {
-      "symbol": "3532",
-      "name": "台勝科"
+      "symbol": "4977",
+      "name": "眾達-KY"
     },
     {
-      "symbol": "3701",
-      "name": "大眾控"
+      "symbol": "6108",
+      "name": "競國"
     },
     {
-      "symbol": "5243",
-      "name": "乙盛-KY"
+      "symbol": "6715",
+      "name": "嘉基"
     },
     {
-      "symbol": "6224",
-      "name": "聚鼎"
+      "symbol": "0056",
+      "name": "元大高股息"
     },
     {
-      "symbol": "6271",
-      "name": "同欣電"
+      "symbol": "1569",
+      "name": "濱川"
     },
     {
-      "symbol": "3264",
-      "name": "欣銓"
+      "symbol": "3455",
+      "name": "由田"
     },
     {
-      "symbol": "3339",
-      "name": "泰谷"
+      "symbol": "5340",
+      "name": "建榮"
     },
     {
-      "symbol": "3354",
-      "name": "律勝"
-    },
-    {
-      "symbol": "3680",
-      "name": "家登"
-    },
-    {
-      "symbol": "4174",
-      "name": "浩鼎"
-    },
-    {
-      "symbol": "4556",
-      "name": "旭然"
-    },
-    {
-      "symbol": "5464",
-      "name": "霖宏"
-    },
-    {
-      "symbol": "6727",
-      "name": "亞泰金屬"
+      "symbol": "5465",
+      "name": "富驊"
     }
   ]
 }
