@@ -1,0 +1,2 @@
+﻿symbol,name,entry_date,exit_date,entry_price,exit_price,cost_per_sheet,profit_loss,return_pct,reason
+2449,京元電子,2026-09-24,2026-10-20,311.0,259.5,311000,-51500,-16.56,📉 觸發多週期出場條件 (MACD向下 & KD<70)
