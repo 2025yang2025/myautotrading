@@ -1,25 +1,29 @@
 {
-  "updated_at": "2026-10-29 13:53:48",
+  "updated_at": "2026-10-30 13:33:55",
   "targets": [
     {
-      "symbol": "2020",
-      "name": "美亞"
+      "symbol": "1440",
+      "name": "南紡"
     },
     {
-      "symbol": "2379",
-      "name": "瑞昱"
+      "symbol": "1560",
+      "name": "中砂"
     },
     {
-      "symbol": "2421",
-      "name": "建準"
+      "symbol": "2352",
+      "name": "佳世達"
     },
     {
-      "symbol": "2436",
-      "name": "偉詮電"
+      "symbol": "2444",
+      "name": "兆勁"
     },
     {
-      "symbol": "2492",
-      "name": "華新科"
+      "symbol": "2466",
+      "name": "冠西電"
+    },
+    {
+      "symbol": "2615",
+      "name": "萬海"
     },
     {
       "symbol": "2801",
@@ -30,40 +34,32 @@
       "name": "臺企銀"
     },
     {
-      "symbol": "2889",
-      "name": "國票金"
+      "symbol": "2882",
+      "name": "國泰金"
     },
     {
-      "symbol": "3014",
-      "name": "聯陽"
+      "symbol": "2897",
+      "name": "王道銀行"
     },
     {
-      "symbol": "8996",
-      "name": "高力"
+      "symbol": "4526",
+      "name": "東台"
     },
     {
-      "symbol": "3219",
-      "name": "倚強科"
+      "symbol": "5608",
+      "name": "四維航"
     },
     {
-      "symbol": "3324",
-      "name": "雙鴻"
+      "symbol": "6152",
+      "name": "百一"
     },
     {
-      "symbol": "5309",
-      "name": "系統電"
+      "symbol": "5013",
+      "name": "強新"
     },
     {
-      "symbol": "6603",
-      "name": "富強鑫"
-    },
-    {
-      "symbol": "6620",
-      "name": "漢達"
-    },
-    {
-      "symbol": "8111",
-      "name": "立碁"
+      "symbol": "6532",
+      "name": "瑞耘"
     }
   ]
 }
